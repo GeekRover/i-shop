@@ -73,6 +73,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 70px;
 }
 
 .banner-section .content {
@@ -93,6 +94,18 @@ nav {
   background-repeat: no-repeat;
 }
 
+/* Sponsors Section */
+.sponsors {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-top:10px ;
+  padding-bottom: 10px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
 /* Responsive section Mobile*/
 @media screen and (max-width: 576px) {
   .nav-anchors a:nth-child(1),
@@ -116,5 +129,10 @@ nav {
   }
   .banner-section .content p {
     font-size: 3vw;
+  }
+  .sponsors{
+    flex-wrap: wrap;
+    border: none;
+    text-align: center;
   }
 }
