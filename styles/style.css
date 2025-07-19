@@ -145,7 +145,7 @@ nav {
   text-align: center;
 }
 
-.products{
+.products {
   text-align: left;
 }
 
@@ -158,9 +158,8 @@ nav {
   margin-top: 50px;
 }
 
-
 /* footer banner*/
-.oneplace{
+.oneplace {
   max-width: 1100px;
   display: flex;
   gap: 100px;
@@ -169,9 +168,8 @@ nav {
   margin-bottom: 100px;
 }
 
-
 /* footer */
-footer{
+footer {
   background-color: rgb(10, 8, 38);
   height: 240px;
   width: 100%;
@@ -180,16 +178,15 @@ footer{
   justify-content: center;
   align-items: center;
 }
-.texts{
+.texts {
   text-align: center;
   color: #ffffff;
 }
-.logoz img{
+.logoz img {
   height: 30px;
   width: 30px;
   background-color: #ffffff;
   border-radius: 70%;
-
 }
 
 /* Responsive section Mobile*/
@@ -225,15 +222,19 @@ footer{
   .collection {
     grid-template-columns: repeat(1, 1fr);
   }
-  .oneplace{
+
+  .oneplace {
     flex-direction: column-reverse;
     text-align: center;
     gap: 30px;
   }
-  #content-gg{
+  #content-gg {
     text-align: center;
   }
-  footer{
+  .products >img{
+    width: 100%;
+  }
+  footer {
     height: 400px;
   }
 }
