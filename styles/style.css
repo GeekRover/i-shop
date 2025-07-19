@@ -38,6 +38,18 @@ body {
   padding: 10px 24px;
 }
 
+.btn-2 {
+  background-color: #e02c6d;
+  border: none;
+  max-width: 155px;
+  height: 44px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 10px 24px;
+}
+
 /* Nav-Bar Styles */
 nav {
   max-width: 1200px;
@@ -101,11 +113,85 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
-  padding-top:10px ;
+  padding-top: 10px;
   padding-bottom: 10px;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
+  margin-bottom: 100px;
 }
+
+/* Product collection */
+.collection {
+  max-width: 1047px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  gap: 30px;
+}
+
+#mother-collection {
+  max-width: 1047px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+#mother-collection #pc {
+  text-align: center;
+}
+
+.products {
+  border-radius: 5px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.384);
+  padding: 15px;
+  text-align: center;
+}
+
+.products{
+  text-align: left;
+}
+
+.review {
+  height: 30px;
+}
+
+.see-more {
+  text-align: right;
+  margin-top: 50px;
+}
+
+
+/* footer banner*/
+.oneplace{
+  max-width: 1100px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+
+/* footer */
+footer{
+  background-color: rgb(10, 8, 38);
+  height: 240px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.texts{
+  text-align: center;
+  color: #ffffff;
+}
+.logoz img{
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  border-radius: 70%;
+
+}
+
 /* Responsive section Mobile*/
 @media screen and (max-width: 576px) {
   .nav-anchors a:nth-child(1),
@@ -129,10 +215,25 @@ nav {
   }
   .banner-section .content p {
     font-size: 3vw;
+    text-align: center;
   }
-  .sponsors{
+  .sponsors {
     flex-wrap: wrap;
     border: none;
     text-align: center;
+  }
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .oneplace{
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+  #content-gg{
+    text-align: center;
+  }
+  footer{
+    height: 400px;
   }
 }
